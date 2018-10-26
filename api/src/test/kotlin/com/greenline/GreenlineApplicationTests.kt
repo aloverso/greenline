@@ -1,4 +1,4 @@
-package com.transit.greenline
+package com.greenline
 
 import org.junit.Test
 import org.junit.runner.RunWith

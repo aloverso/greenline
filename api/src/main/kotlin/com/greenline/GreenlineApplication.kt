@@ -1,4 +1,4 @@
-package com.transit.greenline
+package com.greenline
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
