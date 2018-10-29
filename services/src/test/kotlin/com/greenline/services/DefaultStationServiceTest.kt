@@ -1,6 +1,8 @@
 package com.greenline.services
 
 import com.greenline.domain.stations.Station
+import com.greenline.domain.stations.StationRepository
+import com.greenline.domain.stations.stubs.StubStationRepository
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
@@ -31,12 +33,4 @@ class DefaultStationServiceTest {
         assertThat(stations[0].id).isEqualTo("123")
     }
 
-}
-
-class StubStationRepository : StationRepository {
-    override fun getStations(): List<Station> {
-        return stubbedStations
-    }
-
-    lateinit var stubbedStations: List<Station>
 }
