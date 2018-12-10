@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "mobx": "^5.5.2",
+    "mobx-react": "^5.3.6",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.0.5",
-    "testcafe": "^0.23.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0"
+    "spring-cloud-contract-json-reader": "^1.0.2",
+    "testcafe": "^0.23.0"
   },
   "scripts": {
     "start": "react-scripts start",

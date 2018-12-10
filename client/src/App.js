@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
+import {Provider} from "mobx-react";
+import StationContainer from "./containers/StationContainer";
+import AppStore from "./stores/AppStore";
+import ApiClient from "./clients/ApiClient";
+
+const appStore = new AppStore(new ApiClient());
+const stores = {
+  appStore
+};
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Provider { ...stores }>
+        <StationContainer />
 
-        <div data-station>Grand Central - 42 St</div>
-        <div data-station>Canal St</div>
-
-      </div>
+      </Provider>
     );
   }
 }
+
 
 export default App;
